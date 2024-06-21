@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Albert Sans', sans-serif;
+    box-sizing: border-box;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 75px 0;
+    height: 100vh;
+    max-width: 1000px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    margin-bottom: 40px;
+    font-size: 42px;
+    color: #3f3a4e;
+}
+
+.input-wrap {
+    position: relative;
+    margin: 0 auto;
+    width: 40%;
+    border-radius: 100px;
+}
+
+.input {
+    padding: 10px 20px;
+    width: 100%;
+    font-size: 16px;
+    font-weight: 400;
+    color: #3f3a4e;
+    border: 2px solid #9945ff;
+    border-radius: 100px;
+
+    &::placeholder {
+        color: #939296;
+    }
+
+    &:focus {
+        outline: none;
+        box-shadow: 0 0 15px rgba(153, 69, 255, .3);
+    }
+}
+
+.btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    padding: 10px 40px;
+    height: 100%;
+    font-size: 16px;
+    font-weight: 700;
+    color: #fff;
+    background: #9945ff;
+    border: none;
+    border-radius: 100px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all .2s 0s cubic-bezier(0.46, 0.03, 0.52, 0.96);
+
+    &:hover {
+        opacity: .9;
+    }
+}
+
+.output-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+    list-style: none;
+}
+
+.output-item {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.output-text {
+    font-size: 18px;
+    font-weight: 400;
+    color: #3f3a4e;
+}
+
+.output-link {
+    transition: all .2s 0s cubic-bezier(0.46, 0.03, 0.52, 0.96);
+
+    img {
+        display: block;
+        margin-left: 10px;
+        width: 12px;
+        height: 12px;
+    }
+
+    &:hover {
+        opacity: .7;
+    }
+}
